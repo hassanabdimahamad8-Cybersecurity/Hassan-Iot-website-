@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admissions | Institute of Technology</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <div class="logo">
+        <h1>JiT</h1>
+        <span>Institute of Technology</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="faculty.html">Faculty</a></li>
+          <li><a href="admissions.html" class="active">Admissions</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content-page">
+    <h2>Admissions</h2>
+    <p>Admission to programs at the Institute of Technology follows the criteria set by the Ministry of Education and Jigjiga University for regular, extension, evening, and summer modalities.</p>
+
+    <h3>General Requirements</h3>
+    <ul>
+      <li>Successful completion of Ethiopian Secondary School Leaving Certificate Examination (or equivalent) with the required grades for the chosen program.</li>
+      <li>Meeting the university’s cut-off points and any program-specific prerequisites (especially for engineering fields).</li>
+      <li>Submission of required documents (transcripts, identification, application form) within announced deadlines.</li>
+      <li>For continuing/distance programs: additional criteria as published by the Registrar.</li>
+    </ul>
+
+    <h3>Important Notes</h3>
+    <p>Exact deadlines, entrance requirements, and available seats are announced by the University Registrar each academic year. Prospective students should check official university channels or contact the Registrar’s Office.</p>
+
+    <h3>Inquiry / Expression of Interest Form</h3>
+    <form id="admissionForm" class="form">
+      <div class="form-group">
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="program">Program of Interest *</label>
+        <select id="program" name="program" required>
+          <option value="">-- Select --</option>
+          <option>Civil Engineering</option>
+          <option>Water Resource and Irrigation Engineering</option>
+          <option>Electrical & Computer Engineering</option>
+          <option>Software Engineering</option>
+          <option>Computer Science</option>
+          <option>Information Technology</option>
+          <option>Construction Technology and Management</option>
+          <option>Survey Engineering</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <button type="submit" class="btn">Submit Inquiry</button>
+      <p id="formMessage" class="form-message"></p>
+    </form>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Institute of Technology, Jigjiga University.</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
